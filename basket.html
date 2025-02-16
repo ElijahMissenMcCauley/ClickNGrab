@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basket</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div id="navbar">
+        <a href="index.html" class="logo-container">
+            <img src="img/ClickNGrab Logo.jpg" alt="Logo" class="navbar-logo">
+        </a>
+        <a href="basket.html">Basket</a>
+        <a href="favourite.html">Favourites</a>
+        <a href="about.html">About Us</a>
+    </div>
+    
+    <div id="basket" class="page">
+        <h1>Your Basket</h1>
+        <div id="basket-container" class="basket-container">
+            <ul id="basket-list"></ul>
+    
+            <div id="total-box">
+                <h2>Total</h2>
+                <div id="total-price">£0.00</div>
+                <button id="checkout-btn">Proceed to Checkout</button>
+            </div>
+        </div>
+        <div id="checkout-popup" class="popup">
+            <div class="popup-content">
+                <span class="close-btn" onclick="closePopup()">&times;</span>
+                <h3>Enter Your Details</h3>
+                <form id="checkout-form">
+                    <label for="firstname">First Name:</label>
+                    <input type="text" id="firstname" name="firstname" required><br>
+                    
+                    <label for="surname">Surname:</label>
+                    <input type="text" id="surname" name="surname" required><br>
+                
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required class="half-width">
+                
+                        <label for="phone">Phone Number:</label>
+                        <input type="text" id="phone" name="phone" required class="half-width">
+                    </div>
+                
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" name="address" required><br>
+
+                    <label for="card">Card Number:</label>
+                    <input type="text" id="card" name="card" required><br>
+
+                    <div class="form-group">
+                        <label for="expiry">Expiry date:</label>
+                        <input type="text" id="expiry" name="expiry" required class="half-width">
+
+                        <label for="security">Security Code:</label>
+                        <input type="text" id="security" name="security" required class="half-width">
+                    </div>
+                
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
